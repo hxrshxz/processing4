@@ -1104,6 +1104,9 @@ public class PShapeSVG extends PShape {
    * @return true if the token is in compact arc notation format
    */
   private boolean isCompactArcNotation(String token) {
+    if (token == null) {
+      return false;
+    }
     return token.length() > 1 &&
            (token.charAt(0) == '0' || token.charAt(0) == '1') &&
            (token.charAt(1) == '0' || token.charAt(1) == '1') &&
