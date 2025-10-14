@@ -969,7 +969,9 @@ public class PShapeSVG extends PShape {
         float endX;
         float endY;
         int tokenOffset = 0;
-        if (token4.length() > 1 && (token4.charAt(0) == '0' || token4.charAt(0) == '1')) {
+        if (token4.length() > 1 &&
+            (token4.charAt(0) == '0' || token4.charAt(0) == '1') &&
+            (token4.charAt(1) == '0' || token4.charAt(1) == '1')) {
           fa = token4.charAt(0) == '1';
           fs = token4.charAt(1) == '1';
           if (token4.length() > 2) {
